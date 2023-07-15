@@ -1,9 +1,11 @@
 const express = require('express');
 const {
   postVideoGames,
+} = require('../../Controllers/VideoGames/VideoGamesPostControllers');
+const {
   getVideoGames,
   getVideoGameDetail,
-} = require('../../Controllers/VideoGames/VideoGamesPostControllers');
+} = require('../../Controllers/VideoGames/VideoGamesGetControllers');
 const router = express.Router();
 
 router.post('/', postVideoGames);
